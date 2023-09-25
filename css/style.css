@@ -278,6 +278,12 @@ footer a{
     #testimonials .text-center{
         text-align: left ;
     }
+    #benefits .col{
+        width: calc(100% / 2);
+    }
+    .about-us-container{
+        padding: 20px;
+    }
 }
 /* @media screen and (min-width: 768px){
     
