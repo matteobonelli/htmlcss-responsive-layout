@@ -317,4 +317,7 @@ footer a{
     .planning-container{
         width: calc(100% / 2 - 20px);
     }
+    #benefits .col{
+        width: calc(100% / 3);
+    }
 }
