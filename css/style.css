@@ -275,7 +275,7 @@ footer a{
         align-items: center;
         align-content: center;
     }
-    #testimonials .text-center{
+    #testimonials .col{
         text-align: left ;
     }
     #benefits .col{
@@ -303,5 +303,18 @@ footer a{
     }
     #intro .col:first-child .card{
         display: flex;
+    }
+    .d-flex1200{
+        display:flex;
+    }
+    .align-end1200{
+        align-items: end;
+        align-content: end;
+    }
+    .sb-1200{
+        justify-content: space-between;
+    }
+    .planning-container{
+        width: calc(100% / 2 - 20px);
     }
 }
