@@ -30,6 +30,9 @@ h2{
 h3{
     font-size: 2em;
 }
+p{
+    line-height: 1.7;
+}
 /* contenitori */
 .container{
     padding: 40px;
@@ -127,9 +130,9 @@ h3{
 .font-size-big{
     font-size: 1.2em;
 }
-.line-height{
+/* .line-height{
     line-height: 2;
-}
+} */
 
 /* header */
 header{
@@ -159,7 +162,7 @@ nav ul{
 main{
     padding-top: 90px;
 }
-section{
+section:first-child{
     padding-top: 40px;
 }
 .card-image{
@@ -192,6 +195,16 @@ section{
     font-size: 1.5em;
     margin: 0;
 }
+.card-testimonial{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+}
+.card-testimonial img{
+    object-fit: cover;
+}
+
 /* footer */
 footer{
     background-color: var(--color-dark-color);
