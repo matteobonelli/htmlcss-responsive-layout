@@ -77,11 +77,11 @@ h3{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.px-30{
+.py-30{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.py-30{
+.px-30{
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -147,7 +147,7 @@ main{
     top: 30px;
 }
 .icon{
-    font-size: 3em;
+    font-size: 6em;
     color: var(--color-secondary-color);
     margin-bottom: 10px;
 }
