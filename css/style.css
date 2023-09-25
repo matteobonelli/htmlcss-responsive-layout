@@ -38,7 +38,7 @@ p{
 }
 /* contenitori */
 .container{
-    padding: 40px;
+    padding: 20px;
 }
 .col{
     padding: 10px;
@@ -291,6 +291,21 @@ footer a{
 @media screen and (min-width: 992px){
     nav ul{
         display: flex;
+        list-style: none;
+    }
+    nav a{
+        text-decoration: none;
+        color: var(--color-light-color);
+    }
+    nav li{
+        padding: 7px 10px;
+    }
+    nav li:last-child{
+        padding: 0 10px;
+    }
+    nav .btn{
+        background-color: var(--color-light-color);
+        color: var(--color-text);
     }
     nav .fa-solid.fa-bars{
         display: none;
@@ -319,5 +334,14 @@ footer a{
     }
     #benefits .col{
         width: calc(100% / 3);
+    }
+    .container-1200{
+        max-width: 500px;
+    }
+    .about-us-container-1200{
+        max-width: 700px;
+    }
+    #about-us .col{
+        width: calc(100% - 800px);
     }
 }
