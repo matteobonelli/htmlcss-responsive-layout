@@ -30,6 +30,9 @@ h2{
 h3{
     font-size: 2em;
 }
+h4{
+    font-size: 1.5em;
+}
 p{
     line-height: 1.7;
 }
@@ -44,6 +47,12 @@ p{
     height: 100%;
 }
 /* utility */
+/* flex */
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
 /* bottoni */
 .btn{
     padding: 6px 15px;
@@ -53,8 +62,14 @@ p{
     background-color: var(--color-primary-color);
     border-radius: 15px;
 }
+.btn-primary{
+    background-color: var(--color-primary-color);
+}
 .btn-secondary{
     background-color: var(--color-secondary-color);
+}
+.btn-light{
+    background-color: var(--color-light-color);
 }
 /* sfondi */
 .bg-light{
@@ -69,7 +84,7 @@ p{
 
 /* bordi */
 .small-border-rounded{
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .big-border-rounded{
     border-radius: 50px;
@@ -120,6 +135,12 @@ p{
 }
 .text-dark{
     color: var(--color-dark-color);
+}
+.text-grey{
+    color: silver;
+}
+.text-contrast{
+    color: var(--color-contrast-color);
 }
 .text-center{
     text-align: center;
@@ -195,14 +216,27 @@ section:first-child{
     font-size: 1.5em;
     margin: 0;
 }
-.card-testimonial{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    
-}
 .card-testimonial img{
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 50%;
+}
+#benefits .btn{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 50px;
+}
+.more{
+    padding-bottom: 30px;
+}
+#call-to-action h2{
+    font-size: 5em;
+}
+#call-to-action .btn{
+    width: 80%;
+    padding: 16px 0;
+    border-radius: 60px;
 }
 
 /* footer */
@@ -210,6 +244,9 @@ footer{
     background-color: var(--color-dark-color);
     color: var(--color-light-color);
 
+}
+footer a{
+    color: purple;
 }
 
 /* media query */
