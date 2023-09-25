@@ -179,6 +179,29 @@ nav ul{
 .fa-solid.fa-bars{
     font-size: 1.5em;
 }
+.topnav{
+    position: relative;
+}
+.topnav:hover{
+    cursor: pointer;
+}
+.topnav:hover + .submenu{
+    display: block;
+}
+.submenu{
+    display: none;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	background-color: var(--color-dark-color);
+	width: 100%;
+}
+.submenu a{
+    display: block;
+    text-decoration: none;
+    color: var(--color-light-color);
+    padding: 20px;
+}
 /* main */
 main{
     padding-top: 90px;
@@ -329,8 +352,12 @@ footer a{
     .sb-1200{
         justify-content: space-between;
     }
+    .planning-container-white{
+        width: 50%;
+    }
     .planning-container{
-        width: calc(100% / 2 - 20px);
+        width: 100%;
+        padding-right: 90px;
     }
     #benefits .col{
         width: calc(100% / 3);
@@ -343,5 +370,8 @@ footer a{
     }
     #about-us .col{
         width: calc(100% - 800px);
+    }
+    #intro .card-content{
+        width: 100%;
     }
 }
