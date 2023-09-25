@@ -24,12 +24,15 @@ img{
     display: block;
     width: 100%;
 }
+h2{
+    font-size: 3em;
+}
 h3{
     font-size: 2em;
 }
 /* contenitori */
 .container{
-    padding: 30px;
+    padding: 40px;
 }
 .col{
     padding: 10px;
@@ -38,6 +41,18 @@ h3{
     height: 100%;
 }
 /* utility */
+/* bottoni */
+.btn{
+    padding: 6px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-light-color);
+    background-color: var(--color-primary-color);
+    border-radius: 15px;
+}
+.btn-secondary{
+    background-color: var(--color-secondary-color);
+}
 /* sfondi */
 .bg-light{
     background-color: var(--color-light-color);
@@ -54,7 +69,7 @@ h3{
     border-radius: 10px;
 }
 .big-border-rounded{
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .circle{
     border-radius: 50%;
@@ -85,6 +100,10 @@ h3{
     padding-left: 30px;
     padding-right: 30px;
 }
+.px-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 /* testo */
 .text-primary{
@@ -96,24 +115,22 @@ h3{
 .text-light{
     color: var(--color-light-color);
 }
+.text-dark{
+    color: var(--color-dark-color);
+}
 .text-center{
     text-align: center;
+}
+.font-weight-bold{
+    font-weight: bold;
+}
+.font-size-big{
+    font-size: 1.2em;
 }
 .line-height{
     line-height: 2;
 }
-/* bottoni */
-.btn{
-    padding: 6px 15px;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-light-color);
-    background-color: var(--color-primary-color);
-    border-radius: 15px;
-}
-.btn-secondary{
-    background-color: var(--color-secondary-color);
-}
+
 /* header */
 header{
     background-color: var(--color-secondary-color);
@@ -140,7 +157,10 @@ nav ul{
 }
 /* main */
 main{
-    padding-top: 120px;
+    padding-top: 90px;
+}
+section{
+    padding-top: 40px;
 }
 .card-image{
     position: relative;
@@ -151,7 +171,7 @@ main{
     color: var(--color-secondary-color);
     margin-bottom: 10px;
 }
-section p{
+#intro p{
     font-weight: bold;
 }
 #intro .btn{
@@ -164,7 +184,14 @@ section p{
 .fa-brands.fa-apple{
     padding-right: 5px;
 }
-
+#planning .btn{
+    padding: 15px 20px;
+}
+#planning .icon{
+    color: var(--color-text);
+    font-size: 1.5em;
+    margin: 0;
+}
 /* footer */
 footer{
     background-color: var(--color-dark-color);
