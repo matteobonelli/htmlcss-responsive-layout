@@ -28,7 +28,7 @@ h2{
     font-size: 3em;
 }
 h3{
-    font-size: 2em;
+    font-size: 1.4em;
 }
 h4{
     font-size: 1.5em;
@@ -267,6 +267,16 @@ footer a{
     }
     #intro .col:first-child{
         width: calc((100% / 3) * 2);
+    }
+    #testimonials .card{
+        padding-left: 0px;
+    }
+    .align-center{
+        align-items: center;
+        align-content: center;
+    }
+    #testimonials .text-center{
+        text-align: left ;
     }
 }
 /* @media screen and (min-width: 768px){
