@@ -1,0 +1,214 @@
+:root {
+	--color-secondary-color: #0084fd;
+	--color-dark-color: #333333;
+	--color-light-color: #ffffff;
+	--color-primary-color: #9792e4;
+	--color-bg-card: #b5ddff;
+	--color-contrast-color: #fcc060;
+	--color-text: #424242;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--color-light-color);
+    color: var(--color-text);
+}
+.debug{
+    border: 1px solid black;
+}
+img{
+    display: block;
+    width: 100%;
+}
+h3{
+    font-size: 2em;
+}
+/* contenitori */
+.container{
+    padding: 30px;
+}
+.col{
+    padding: 10px;
+}
+.card{
+    height: 100%;
+}
+/* utility */
+/* sfondi */
+.bg-light{
+    background-color: var(--color-light-color);
+}
+.bg-card{
+    background-color: var(--color-bg-card);
+}
+.bg-primary{
+    background-color: var(--color-primary-color);
+}
+
+/* bordi */
+.small-border-rounded{
+    border-radius: 10px;
+}
+.big-border-rounded{
+    border-radius: 20px;
+}
+.circle{
+    border-radius: 50%;
+}
+
+/* padding */
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.px-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.px-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.py-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* testo */
+.text-primary{
+    color: var(--color-primary-color);
+}
+.text-secondary{
+    color: var(--color-secondary-color);
+}
+.text-light{
+    color: var(--color-light-color);
+}
+.text-center{
+    text-align: center;
+}
+.line-height{
+    line-height: 2;
+}
+/* bottoni */
+.btn{
+    padding: 6px 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-light-color);
+    background-color: var(--color-primary-color);
+    border-radius: 15px;
+}
+.btn-secondary{
+    background-color: var(--color-secondary-color);
+}
+/* header */
+header{
+    background-color: var(--color-secondary-color);
+    color: var(--color-light-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+#logo{
+    width: 100px;
+}
+.nav-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+nav ul{
+    display: none;
+}
+.fa-solid.fa-bars{
+    font-size: 1.5em;
+}
+/* main */
+main{
+    padding-top: 120px;
+}
+.card-image{
+    position: relative;
+    top: 30px;
+}
+.icon{
+    font-size: 3em;
+    color: var(--color-secondary-color);
+    margin-bottom: 10px;
+}
+section p{
+    font-weight: bold;
+}
+#intro .btn{
+    width: 80%;
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.fa-brands.fa-apple{
+    padding-right: 5px;
+}
+
+/* footer */
+footer{
+    background-color: var(--color-dark-color);
+    color: var(--color-light-color);
+
+}
+
+/* media query */
+
+@media screen and (min-width: 576px){
+    .d-flex{
+        display: flex;
+    }
+    .flex-wrap{
+        flex-wrap: wrap;
+    }
+    .align-stretch{
+        align-items: stretch;
+        align-content: stretch;
+    }
+    #intro .col{
+        width: calc(100% / 3);
+    }
+    #intro .col:first-child{
+        width: calc((100% / 3) * 2);
+    }
+}
+/* @media screen and (min-width: 768px){
+    
+} */
+@media screen and (min-width: 992px){
+    nav ul{
+        display: flex;
+    }
+    nav .fa-solid.fa-bars{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    #intro .col:first-child .card{
+        display: flex;
+    }
+}
